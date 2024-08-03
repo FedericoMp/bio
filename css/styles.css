@@ -1,0 +1,90 @@
+/* Profile image */
+.profile {
+    width: 136px;
+    height: 136px;
+    border: 5px solid #21252908;
+}
+
+/* Pulse animation */
+.blob {
+	background: var(--bs-success-rgb);
+	border-radius: 50%;
+    width: 10px;
+    height: 10px;
+	box-shadow: 0 0 0 0 rgba(var(--bs-success-rgb), 1);
+	transform: scale(0.8);
+	animation: pulse 4s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.4);
+		box-shadow: 0 0 0 0 rgba(var(--bs-success-rgb), 0.7);
+	}
+
+	70% {
+		transform: scale(0.8);
+		box-shadow: 0 0 0 10px rgba(var(--bs-success-rgb), 0);
+	}
+
+	100% {
+		transform: scale(0.4);
+		box-shadow: 0 0 0 0 rgba(var(--bs-success-rgb), 0);
+	}
+}
+
+/* Muscle animation */
+.muscle {
+    display: inline-block;
+    transform: rotate(0deg);
+	animation: rotation 3s infinite;
+}
+
+@keyframes rotation {
+	0% {
+		transform: rotate(10deg);
+	}
+	
+    50% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(10deg);
+	}
+}
+
+/* Mail animation */
+.mail {
+    display: inline-block;
+    transform: translate(0px, 0px);
+	animation: levitate 3s infinite;
+}
+
+@keyframes levitate {
+	0% {
+		transform: translate(0px, -3px);
+	}
+	
+    50% {
+		transform: translate(0px, -0px);
+	}
+
+	100% {
+		transform: translate(0px, -3px);
+	}
+}
+
+/* FAQ's buttons */
+.accordion-button:not(.collapsed)::after {
+    filter: brightness(20);
+}
+
+.accordion-button::after {
+    filter: invert(1);
+}
+
+.accordion-button:focus {
+    outline: none!important;
+    box-shadow: none!important;
+}
