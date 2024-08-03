@@ -75,6 +75,41 @@
 	}
 }
 
+/* Card responsive */
+.card-responsive {
+	width: 50%;
+}
+
+@media screen and (max-width: 992px) {
+	.card-responsive {
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+/* Capacitations */
+.card-text.capacitations {
+	width: 75%;
+}
+
+@media screen and (max-width: 992px) {
+	.card-text.capacitations {
+		width: 100%;
+	}
+}
+
+/* Figure */
+@media screen and (max-width: 992px) {
+	figure.training-img {
+		margin: 0 auto;
+	}
+}
+
+figure.training-img > img {
+	width: 100%;
+    max-width: 620px;
+}
+
 /* FAQ's buttons */
 .accordion-button:not(.collapsed)::after {
     filter: brightness(20);
