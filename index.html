@@ -40,8 +40,13 @@
 		/>
 		<!-- Styles -->
 		<link rel="stylesheet" href="https://federicomp.github.io/bio/css/styles.css" />
+		<!-- Scripts -->
+		<script defer src="https://federicomp.github.io/bio/scripts/index.js"></script>
 	</head>
 	<body>
+		<header id="headerForm" class="bg-body-tertiary py-3 text-center d-none">
+			<button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="showForm">Ver Encuesta</button>
+		</header>
 		<main>
 			<div class="container py-5">
 				<!-- Header Jumbotron -->
@@ -320,10 +325,27 @@
                 <!-- Footer -->
                  <footer class="text-center text-body-tertiary">
                     <a href="https://ig.me/fedemartinpe" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" title="Instagram: @fedemartinpe">@fedemartinpe</a>
-                    <span id="year"></span>
+                    <span id="year">...</span>
                  </footer>
 			</div>
 		</main>
+		<!-- Modal -->
+		<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="staticBackdropLabel">Completar el formulario</h1>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSccSzGnv3Ksw9Rzbp5tAvcJxuQ5SgspJFNOa51fkY3fOvu-oA/viewform?embedded=true" width="100%" height="3000" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+					  </div>
+				</div>
+			</div>
+		</div>
 		<!-- Bootstrap Script -->
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
